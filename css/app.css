@@ -1,0 +1,893 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 400;
+}
+
+p a {
+  display: inline;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+}
+
+video {
+  display: block;
+  object-fit: cover;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav {
+  width: 20%;
+}
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  font-weight: 600;
+  padding: 0 20px;
+}
+header nav.dos ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header nav.dos ul li {
+  padding: 0 30px;
+}
+header i.fas {
+  display: none;
+}
+
+div.uno {
+  position: relative;
+}
+div.uno video {
+  width: 100vw;
+}
+div.uno div {
+  width: 30%;
+  z-index: 9;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+div.uno div h2 {
+  font-size: 5em;
+  font-weight: 700;
+  color: white;
+}
+div.uno div p {
+  font-size: 1.1em;
+  padding-top: 20px;
+  color: white;
+  font-weight: 600;
+}
+div.uno section {
+  width: 80%;
+  background-color: white;
+  z-index: 9;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+div.uno section article {
+  padding: 80px 40px;
+}
+div.uno section article p.primero {
+  font-weight: 600;
+  font-size: 1em;
+  padding-bottom: 6px;
+}
+div.uno section article p.segundo {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+div.uno section article p.tercero {
+  color: gray;
+  font-size: 1.2em;
+}
+div.uno section article p {
+  line-height: 30px;
+}
+
+i.fa-arrow-right {
+  display: none;
+}
+
+p.primero {
+  font-weight: 600;
+  font-size: 1em;
+  padding-bottom: 6px;
+}
+
+p.big {
+  font-size: 2.1em;
+  font-weight: 700;
+}
+
+article.todos {
+  font-size: 1em;
+  color: #555c62;
+  max-width: 480px;
+  line-height: 30px;
+}
+
+div.dos {
+  width: 100vw;
+}
+div.dos section.a {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+div.dos section.b {
+  width: 70%;
+  max-width: 1540px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+div.dos section.b article.z {
+  padding-right: 180px;
+}
+div.dos section.b article.z p {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+div.dos section.b article.y {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px;
+  max-width: 1120px;
+}
+div.dos section.b article.y section {
+  padding: 27px;
+}
+div.dos section.b article.y section.azul {
+  max-width: 650px;
+}
+div.dos section.b article.y section.azul p.big {
+  font-size: 2.1em;
+  font-weight: 700;
+}
+div.dos section.b article.y section.verde {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+div.dos section.b article.y section.verde article article.todos {
+  font-size: 1em;
+  color: #555c62;
+  max-width: 480px;
+  line-height: 30px;
+}
+div.dos section.b article.y section.verde article.primero {
+  padding-right: 50px;
+}
+div.dos section.b article.y section.rojo {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+div.dos section.b article.y section.rosa p {
+  padding: 10px 0;
+}
+div.dos section.b article.y section.rosa p a {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.7em;
+}
+div.dos section.b article.y section.rosa p a:hover .linea--uno {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition-delay: 0s;
+}
+div.dos section.b article.y section.rosa p a:hover .linea--dos {
+  transform: scaleX(1);
+  transform-origin: right center;
+  transition-delay: 0.1s;
+}
+div.dos section.b article.y section.rosa .linea {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+div.dos section.b article.y section.rosa .linea--uno {
+  background: black;
+  transform: scaleX(1);
+  transform-origin: right center;
+  transition-delay: 0.1s;
+}
+div.dos section.b article.y section.rosa .linea--dos {
+  background: black;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition-delay: 0s;
+}
+
+div.tres {
+  background-image: url(../img/360preview.webp);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+div.tres p {
+  background: white;
+  width: 20%;
+  height: 60px;
+  text-align: center;
+  padding: 17px;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+div.cuatro p.none {
+  display: none;
+}
+div.cuatro section.roma {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 0;
+}
+div.cuatro section.paris {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1240px;
+  margin: auto;
+}
+div.cuatro section.paris article.texto {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-right: 150px;
+}
+div.cuatro section.paris article.texto p.strong {
+  padding-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+div.cuatro section.paris article.texto p.light {
+  padding-bottom: 60px;
+  color: #555c62;
+  line-height: 30px;
+}
+div.cuatro section.paris article.texto p.info {
+  padding-bottom: 60px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+div.cuatro section.paris article.texto p.sub {
+  text-decoration: underline;
+  font-size: 1.7em;
+  padding: 20px 0;
+}
+div.cuatro section.paris article.texto p.dos {
+  padding-bottom: 120px;
+}
+div.cuatro section.paris article.foto {
+  width: 50%;
+}
+
+div.cinco {
+  padding: 100px 0;
+  overflow: hidden;
+}
+div.cinco article {
+  width: 500%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  animation: moverse 30s ease infinite 3s;
+}
+div.cinco article img {
+  width: calc( 100% / 7 );
+}
+
+div.seis section.a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 0;
+}
+div.seis div {
+  width: 75%;
+  margin: auto;
+}
+div.seis div section.c {
+  padding: 60px 0 40px 0;
+}
+div.seis div section.c p a {
+  font-size: 1.6em;
+  text-decoration: underline;
+}
+div.seis div section.d {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+div.seis div section.d article {
+  width: 50%;
+}
+div.seis div section.d article p {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+}
+div.seis div section.d article p.upper {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+div.seis div section.d article p.normal {
+  color: #555c62;
+  line-height: 30px;
+}
+
+div.siete {
+  position: relative;
+}
+div.siete video {
+  width: 100vw;
+  height: 45vh;
+}
+div.siete section {
+  width: 80%;
+  background-color: white;
+  z-index: 9;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+div.siete section article {
+  padding: 80px 40px;
+}
+div.siete section article p.black {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding-bottom: 6px;
+}
+div.siete section article p.gray {
+  font-weight: 500;
+  font-size: 1.1em;
+  color: gray;
+  padding: 10px 0;
+}
+
+div.ocho section.arriba {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 0;
+}
+div.ocho section.abajo {
+  width: 75%;
+  max-width: 1800px;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 0;
+}
+div.ocho section.abajo article {
+  width: 50%;
+  padding: 0 60px;
+}
+div.ocho section.abajo article p.todos {
+  color: #555c62;
+  line-height: 30px;
+  padding: 100px 0;
+}
+div.ocho section.abajo article p a {
+  font-size: 1.6em;
+  text-decoration: underline;
+}
+
+footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+footer section.a {
+  width: 40%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer section.a article ul li {
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 15px;
+  transition: all 0.4s ease;
+}
+footer section.a article ul li a {
+  color: #525252;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+footer section.a article ul li a:hover {
+  color: black;
+}
+footer section.a article p {
+  padding: 80px 0;
+  color: #525252;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+footer section.b {
+  width: 30%;
+  max-width: 255px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+footer section.b p.uno {
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 15px 0;
+}
+footer section.b p.dos {
+  color: #525252;
+  font-weight: 400;
+  font-size: 1em;
+  padding-bottom: 25px;
+}
+footer section.b p.cuatro {
+  padding: 320px 0 80px 100px;
+  color: #525252;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+div.negro {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+  animation: negro 3s ease 1 forwards 3s;
+  overflow: hidden;
+}
+div.negro p {
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 800px;
+  font-size: 1.4em;
+  position: relative;
+  animation: texto 0.2s ease 1 2s both;
+}
+div.negro section {
+  width: 20%;
+  height: 100px;
+  background-color: white;
+  margin-top: -100px;
+  margin-left: 670px;
+  position: relative;
+  z-index: 11;
+  animation: blanco 2s ease 1 1s both;
+}
+div.negro section article {
+  width: 20%;
+  height: 70px;
+  background-color: black;
+  position: absolute;
+  z-index: 12;
+  margin: 17px 0 0 30px;
+  animation: pequeño 1s ease 1 1s both;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-flow: row wrap;
+    height: auto;
+  }
+  header nav {
+    display: none;
+  }
+  header i.fas {
+    display: block;
+  }
+  header nav.activado {
+    width: 100%;
+    display: flex;
+    flex-flow: column, wrap;
+    margin-top: 40px;
+  }
+  header nav.activado ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav.activado ul li {
+    padding: 10px 0;
+  }
+
+  div.uno video {
+    height: 1000px;
+  }
+  div.uno div {
+    width: 40%;
+    left: 35px;
+  }
+  div.uno div h2 {
+    font-size: 3em;
+  }
+  div.uno div p {
+    font-size: 0.8em;
+  }
+  div.uno section {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  div.uno section article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  div.uno section article p.segundo {
+    padding: 0 0 0 20px;
+    font-size: 1.1em;
+  }
+  div.uno section article p.tercero {
+    display: none;
+  }
+
+  i.fa-arrow-right {
+    display: block;
+    padding: 5px 0 0 15px;
+  }
+
+  div.dos section.a {
+    padding: 80px;
+    margin: auto;
+  }
+  div.dos section.a p.dos {
+    display: none;
+  }
+  div.dos section.b article.z {
+    display: none;
+  }
+  div.dos section.b article.y section.azul {
+    padding: 0;
+  }
+  div.dos section.b article.y section.azul p.big {
+    font-size: 1.4em;
+    line-height: 34px;
+    font-weight: 600;
+  }
+  div.dos section.b article.y section.verde {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+  div.dos section.b article.y section.verde article {
+    padding: 80px 0 20px 0;
+  }
+  div.dos section.b article.y section.rojo {
+    padding: 0;
+  }
+  div.dos section.b article.y section.rojo p {
+    font-size: 0.7em;
+    padding: 40px 0;
+  }
+  div.dos section.b article.y section.rosa {
+    padding: 0;
+  }
+  div.dos section.b article.y section.rosa p {
+    font-size: 0.6em;
+  }
+
+  div.tres p {
+    display: none;
+  }
+
+  div.cuatro p.none {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+  }
+  div.cuatro section.roma {
+    width: 70%;
+    margin: auto;
+    padding: 120px 0 80px 0;
+  }
+  div.cuatro section.roma p.dos {
+    display: none;
+  }
+  div.cuatro section.paris {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  div.cuatro section.paris article.texto {
+    padding: 0;
+  }
+  div.cuatro section.paris article.texto p.info {
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  div.cuatro section.paris article.texto p.sub {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  div.seis {
+    width: 70%;
+    margin: auto;
+  }
+  div.seis section.a p.primero {
+    font-size: 0.8em;
+  }
+  div.seis section.a p.dos {
+    display: none;
+  }
+  div.seis section.b p {
+    font-size: 1.4em;
+    line-height: 34px;
+    font-weight: 600;
+  }
+  div.seis div section.c p {
+    font-size: 0.6em;
+  }
+  div.seis div section.d {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  div.seis div section.d article {
+    width: 100%;
+  }
+  div.seis div section.d article p.upper {
+    font-size: 0.65em;
+    font-weight: 600;
+    padding: 40px 0;
+  }
+  div.seis div section.d article p.normal {
+    padding: 40px 0;
+    font-weight: 500;
+  }
+
+  div.siete section article {
+    padding: 10px 30px;
+    width: 50%;
+  }
+  div.siete section article p.black {
+    font-size: 1em;
+    padding-bottom: 20px;
+  }
+  div.siete section article p.gray {
+    font-size: 1em;
+  }
+  div.siete section article.dos {
+    display: none;
+  }
+
+  div.ocho section.arriba {
+    padding: 80px;
+    margin: auto;
+  }
+  div.ocho section.arriba p {
+    font-size: 0.9em;
+  }
+  div.ocho section.arriba p.dos {
+    display: none;
+  }
+  div.ocho section.abajo {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 70px 0 0 0;
+  }
+  div.ocho section.abajo article {
+    padding: 0;
+  }
+  div.ocho section.abajo article p.big {
+    font-size: 1.4em;
+    line-height: 34px;
+    font-weight: 600;
+    padding: 0;
+  }
+  div.ocho section.abajo article p {
+    padding-bottom: 70px;
+  }
+  div.ocho section.abajo article p a {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 90px;
+  }
+  footer section.a {
+    margin: auto;
+    width: 50%;
+  }
+  footer section.a article ul li {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  footer section.a article p {
+    font-size: 0.9em;
+  }
+  footer section.b {
+    width: 50%;
+    margin: auto;
+  }
+  footer section.b p.uno {
+    font-size: 0.95em;
+  }
+  footer section.b p.dos {
+    font-size: 0.9em;
+  }
+  footer section.b p.cuatro {
+    padding: 0 0 80px 0;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+}
+@keyframes moverse {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-50%);
+  }
+}
+@keyframes negro {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+@keyframes blanco {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  40% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  60% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+@keyframes pequeño {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+@keyframes texto {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
